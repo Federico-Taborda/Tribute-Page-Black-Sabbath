@@ -1,0 +1,12 @@
+header {
+    @include flex(column);
+
+    background-color: $fondoGris;
+    color: $fuenteBlanco;
+    height: 300px;
+    font-size: 2em;
+
+    span {
+        color: $nombreResaltado;
+    }
+}

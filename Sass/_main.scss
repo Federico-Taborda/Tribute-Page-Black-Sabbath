@@ -1,0 +1,85 @@
+main {
+    @include flex(column);
+    background-color: $fondoGris;
+    
+    hr {
+        width: 70%;
+    }
+    
+    section {
+        @include flex(row);
+        margin: 50px 200px;
+        align-items: stretch;
+    }
+    
+    #intro, #info, #list {
+        border: 2px solid black;
+    }
+
+    #intro, #info {
+        article {
+            @include flex(column);
+            padding: 50px;
+        }
+        
+        .text {
+            background-color: $fondoBlanco;
+
+            h1 {
+                color: $nombreResaltado;
+                font-size: 2em;
+            }
+            
+            h1, p {
+                padding: 10px;
+            }
+        }
+
+        .foto {
+            background-color: black;
+        }
+    }
+
+    
+    #list {
+        @include flex(column);
+        margin: 50px 200px;
+        background-color: $fondoBlanco;
+
+        img {
+            width: 800px;
+        }
+
+        h1 {
+            margin-top: 40px;
+            margin-bottom: 10px;
+            font-size: 2em;
+            color: $nombreResaltado;
+        }
+
+        ul {
+            padding: 20px;
+            margin-bottom: 20px;
+
+            li {
+                padding: 5px;
+            }
+        }
+    }
+
+    #resources {
+        h2 {
+            color: $fondoBlanco;
+
+            a{
+                color: $nombreResaltado;
+                text-decoration: none;
+				
+				&:hover {
+					text-decoration: underline;
+				}
+            }
+        }
+    }
+    
+}

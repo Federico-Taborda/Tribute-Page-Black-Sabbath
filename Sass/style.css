@@ -1,0 +1,167 @@
+@font-face {
+  font-family: 'JetBrainsMono-Italic';
+  src: url("../Fonts/JetBrainsMono-Bold-Italic.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'JetBrainsMono-Italic';
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #333;
+  color: #fff;
+  height: 300px;
+  font-size: 2em;
+}
+
+header span {
+  color: #9b59b6;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #333;
+}
+
+main hr {
+  width: 70%;
+}
+
+main section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 50px 200px;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+main #intro, main #info, main #list {
+  border: 2px solid black;
+}
+
+main #intro article, main #info article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 50px;
+}
+
+main #intro .text, main #info .text {
+  background-color: #fff;
+}
+
+main #intro .text h1, main #info .text h1 {
+  color: #9b59b6;
+  font-size: 2em;
+}
+
+main #intro .text h1, main #intro .text p, main #info .text h1, main #info .text p {
+  padding: 10px;
+}
+
+main #intro .foto, main #info .foto {
+  background-color: black;
+}
+
+main #list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 50px 200px;
+  background-color: #fff;
+}
+
+main #list img {
+  width: 800px;
+}
+
+main #list h1 {
+  margin-top: 40px;
+  margin-bottom: 10px;
+  font-size: 2em;
+  color: #9b59b6;
+}
+
+main #list ul {
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+main #list ul li {
+  padding: 5px;
+}
+
+main #resources h2 {
+  color: #fff;
+}
+
+main #resources h2 a {
+  color: #9b59b6;
+  text-decoration: none;
+}
+
+main #resources h2 a:hover {
+  text-decoration: underline;
+}
+/*# sourceMappingURL=style.css.map */
