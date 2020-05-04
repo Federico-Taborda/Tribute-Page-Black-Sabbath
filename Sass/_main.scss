@@ -4,6 +4,7 @@ main {
     
     hr {
         width: 70%;
+        border: 2px solid black;
     }
     
     section {
@@ -16,7 +17,25 @@ main {
         border: 2px solid black;
     }
 
-    #intro, #info {
+    #intro {
+        .foto {
+            border-right: 5px solid $nombreResaltado;
+        }
+    }
+
+    #info {
+        .foto {
+            border-left: 5px solid $nombreResaltado;
+        }
+    }
+
+    #list {
+        .foto {
+            border-bottom: 5px solid $nombreResaltado;
+        }
+    }
+
+    #intro, #info, #list {
         article {
             @include flex(column);
             padding: 50px;

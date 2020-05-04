@@ -27,12 +27,13 @@ header {
           flex-direction: column;
   background-color: #333;
   color: #fff;
-  height: 300px;
+  height: 50vh;
   font-size: 2em;
 }
 
 header span {
   color: #9b59b6;
+  font-size: 1.5em;
 }
 
 main {
@@ -54,6 +55,7 @@ main {
 
 main hr {
   width: 70%;
+  border: 2px solid black;
 }
 
 main section {
@@ -80,7 +82,19 @@ main #intro, main #info, main #list {
   border: 2px solid black;
 }
 
-main #intro article, main #info article {
+main #intro .foto {
+  border-right: 5px solid #9b59b6;
+}
+
+main #info .foto {
+  border-left: 5px solid #9b59b6;
+}
+
+main #list .foto {
+  border-bottom: 5px solid #9b59b6;
+}
+
+main #intro article, main #info article, main #list article {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -97,20 +111,20 @@ main #intro article, main #info article {
   padding: 50px;
 }
 
-main #intro .text, main #info .text {
+main #intro .text, main #info .text, main #list .text {
   background-color: #fff;
 }
 
-main #intro .text h1, main #info .text h1 {
+main #intro .text h1, main #info .text h1, main #list .text h1 {
   color: #9b59b6;
   font-size: 2em;
 }
 
-main #intro .text h1, main #intro .text p, main #info .text h1, main #info .text p {
+main #intro .text h1, main #intro .text p, main #info .text h1, main #info .text p, main #list .text h1, main #list .text p {
   padding: 10px;
 }
 
-main #intro .foto, main #info .foto {
+main #intro .foto, main #info .foto, main #list .foto {
   background-color: black;
 }
 
