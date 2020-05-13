@@ -178,4 +178,117 @@ main #resources h2 a {
 main #resources h2 a:hover {
   text-decoration: underline;
 }
+
+@media (max-width: 1250px) {
+  header {
+    height: 20vh;
+  }
+  header span {
+    font-size: 1em;
+  }
+  main #intro {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main #intro .foto {
+    width: 100%;
+    border-right: 0px solid black;
+    border-bottom: 5px solid #9b59b6;
+  }
+  main #info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  main #info .foto {
+    width: 100%;
+    border-left: 0px solid black;
+    border-bottom: 5px solid #9b59b6;
+  }
+  main #list img {
+    width: 550px;
+  }
+}
+
+@media (max-width: 768px) {
+  main #intro, main #info, main #list {
+    width: 80%;
+  }
+  main #list .foto {
+    width: 100%;
+  }
+  main #list img {
+    width: 500px;
+  }
+}
+
+@media (max-width: 420px) {
+  header span {
+    font-size: 0.6em;
+  }
+  main {
+    width: 100%;
+  }
+  main hr {
+    display: none;
+  }
+  main #intro, main #info, main #list {
+    margin: 0px;
+    width: 100%;
+  }
+  main #intro .text, main #info .text, main #list .text {
+    padding: 20px;
+  }
+  main #intro .text h1, main #info .text h1, main #list .text h1 {
+    font-size: 1.5em;
+  }
+  main #intro .text p, main #info .text p, main #list .text p {
+    font-size: 0.8em;
+  }
+  main #intro .foto img {
+    width: 200px;
+  }
+  main #info .foto img {
+    width: 150px;
+  }
+  main #list .foto img {
+    width: 300px;
+  }
+  main #list h1 {
+    font-size: 1.5em;
+  }
+  main #list ul {
+    margin: 10px;
+  }
+  main #list ul li {
+    font-size: 0.8em;
+  }
+  main #resources {
+    margin: 40px;
+  }
+  main #resources h2 {
+    font-size: 0.8em;
+  }
+}
 /*# sourceMappingURL=style.css.map */

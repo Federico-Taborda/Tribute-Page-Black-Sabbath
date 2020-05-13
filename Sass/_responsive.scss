@@ -1,0 +1,131 @@
+@media (max-width: 1250px) {
+    header {
+        height: 20vh;
+        span {
+            font-size: 1em;
+        }
+    }
+
+    main {
+        #intro {
+            @include flex(column);
+            
+            .foto {
+                width: 100%;
+                border-right: 0px solid black;
+                border-bottom: 5px solid $nombreResaltado;
+            }
+        }
+        
+        #info {
+            @include flex(column-reverse);
+            
+            .foto {
+                width: 100%;
+                border-left: 0px solid black;
+                border-bottom: 5px solid $nombreResaltado;
+            }
+        }
+
+        #list {
+            img {
+                width: 550px;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    main {
+        #intro, #info, #list {
+            width: 80%;
+        }
+
+        #list {
+
+            .foto {
+                width: 100%;
+            }
+
+            img {
+                width: 500px;
+            }
+        }
+    }
+}
+
+@media (max-width: 420px) {
+    header {
+        
+        span {
+            font-size: 0.6em;
+        }
+    }
+
+    main {
+        width: 100%;
+
+        hr {
+            display: none;
+        }
+
+        #intro, #info, #list {
+            margin: 0px;
+            width: 100%;
+            .text {
+                padding: 20px;
+                h1 {
+                    font-size: 1.5em;
+                }
+
+                p {
+                    font-size: 0.8em;
+                }
+            }
+        }
+        
+        #intro {
+            .foto {
+                img {
+                    width: 200px;
+                }
+            }
+        }
+
+        #info {
+            .foto {
+                img {
+                    width: 150px;
+                }
+            }
+        }
+
+        #list {
+            .foto {
+                img {
+                    width: 300px;
+                }
+            }
+
+            h1 {
+                font-size: 1.5em;
+            }
+
+            ul {
+                margin: 10px;
+
+                li {
+                    font-size: 0.8em;
+                }
+            }
+        }
+
+        #resources {
+            margin: 40px;
+
+            h2 {
+                font-size: 0.8em;
+            }
+        }
+    }
+}
