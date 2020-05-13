@@ -7,7 +7,8 @@
         "_variables.scss",
         "_mixins.scss",
         "_header.scss",
-        "_main.scss"
+        "_main.scss",
+        "_responsive.scss"
     ],
     "names": [],
     "file": "style.css"
